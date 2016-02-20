@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q9C-wN-ohJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QGu-Dr-pzD">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Habit-->
+        <!--iHabit-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HabitViewController" sceneMemberID="viewController">
@@ -58,7 +58,14 @@
                             <constraint firstItem="ZUr-21-3sg" firstAttribute="leading" secondItem="m43-0q-CdO" secondAttribute="leading" id="xr8-8M-2wH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Habit" id="aah-wc-8DI"/>
+                    <navigationItem key="navigationItem" title="iHabit" id="aah-wc-8DI">
+                        <barButtonItem key="leftBarButtonItem" title="编辑" id="S8p-gR-De8">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="PP0-FM-ZBP">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableview" destination="pyU-9O-MOl" id="mQ2-an-r7B"/>
                         <outlet property="thisWeekContentView" destination="ZUr-21-3sg" id="IOx-80-DK1"/>
@@ -66,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1929" y="440"/>
+            <point key="canvasLocation" x="1929" y="429"/>
         </scene>
         <!--Habit Calendar Controller-->
         <scene sceneID="LEs-2y-Dc5">
@@ -107,7 +114,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2F-Oo-N0f">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iHabit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2F-Oo-N0f">
                                         <rect key="frame" x="8" y="8" width="584" height="21"/>
                                         <animations/>
                                         <constraints>
@@ -329,9 +336,6 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="7qN-rU-MTA"/>
-                    <connections>
-                        <outlet property="scrollView" destination="DHM-YR-aCa" id="JiA-RO-Pky"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U59-Sc-ptX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -349,12 +353,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyF-vf-S8c">
-                                <rect key="frame" x="20" y="285" width="181" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button1"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0A4-hj-old">
                                 <rect key="frame" x="399" y="285" width="181" height="30"/>
                                 <animations/>
@@ -366,6 +364,12 @@
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Butto2n"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyF-vf-S8c">
+                                <rect key="frame" x="20" y="285" width="181" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button1"/>
                             </button>
                         </subviews>
                         <animations/>
@@ -387,10 +391,10 @@
             </objects>
             <point key="canvasLocation" x="3004" y="1207"/>
         </scene>
-        <!--View Controller-->
+        <!--Habit Calendar Controller-->
         <scene sceneID="4aQ-hZ-VpE">
             <objects>
-                <viewController id="fap-EF-VuE" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="fap-EF-VuE" customClass="HabitCalendarController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pdi-HP-jKd"/>
                         <viewControllerLayoutGuide type="bottom" id="Xov-Pr-WxQ"/>
@@ -407,15 +411,15 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="yBa-eF-IOY" secondAttribute="trailing" id="0bO-O6-xa5"/>
-                            <constraint firstItem="yBa-eF-IOY" firstAttribute="bottom" secondItem="Xov-Pr-WxQ" secondAttribute="top" id="WLu-2X-RoP"/>
-                            <constraint firstItem="yBa-eF-IOY" firstAttribute="top" secondItem="nUf-q9-yUs" secondAttribute="top" id="qBa-Qt-7Iq"/>
-                            <constraint firstItem="yBa-eF-IOY" firstAttribute="leading" secondItem="nUf-q9-yUs" secondAttribute="leading" id="za0-g9-cIa"/>
+                            <constraint firstItem="yBa-eF-IOY" firstAttribute="top" secondItem="nUf-q9-yUs" secondAttribute="top" id="0KN-h0-zXE"/>
+                            <constraint firstAttribute="trailing" secondItem="yBa-eF-IOY" secondAttribute="trailing" id="My6-Sk-6HG"/>
+                            <constraint firstItem="yBa-eF-IOY" firstAttribute="leading" secondItem="nUf-q9-yUs" secondAttribute="leading" id="UPl-mt-4lG"/>
+                            <constraint firstItem="yBa-eF-IOY" firstAttribute="bottom" secondItem="Xov-Pr-WxQ" secondAttribute="top" id="npe-O6-Aeh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZL7-cM-GDm"/>
                     <connections>
-                        <outlet property="scrollview" destination="yBa-eF-IOY" id="3is-ly-djZ"/>
+                        <outlet property="scrollView" destination="yBa-eF-IOY" id="uVp-6E-hO5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YL-5Z-uhI" userLabel="First Responder" sceneMemberID="firstResponder"/>

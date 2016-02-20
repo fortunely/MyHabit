@@ -19,6 +19,12 @@
 #define CURRENT_WEEKDAY_COLOR    [UIColor yellowColor]
 #define DEFAULT_WEEKDAY_COLOR    [UIColor whiteColor]
 
+typedef struct{
+    int weekday;
+    int day;
+}WeekdayType;
+
+
 @interface HabitViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *thisWeekContentView;
 
@@ -87,10 +93,7 @@ static NSString *tableCellIdentifier = @"Habit Table Cell";
     return nil;
 }
 
-typedef struct{
-    int weekday;
-    int day;
-}WeekdayType;
+
 
 /**
  * 计算与基准日期date相隔dayInterval天数的日期号

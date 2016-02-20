@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A86C6A871C51380E00961A13 /* CalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A86C6A861C51380E00961A13 /* CalendarItem.m */; settings = {ASSET_TAGS = (); }; };
+		A86C6A8A1C528CC600961A13 /* CalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A86C6A891C528CC600961A13 /* CalendarHeader.m */; settings = {ASSET_TAGS = (); }; };
 		A8A6314B1C303BF20018BCE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A631331C303BF20018BCE9 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		A8A6314C1C303BF20018BCE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A631341C303BF20018BCE9 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		A8A6314D1C303BF20018BCE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A631351C303BF20018BCE9 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -43,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A86C6A851C51380E00961A13 /* CalendarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarItem.h; path = View/CalendarView/CalendarItem.h; sourceTree = "<group>"; };
+		A86C6A861C51380E00961A13 /* CalendarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarItem.m; path = View/CalendarView/CalendarItem.m; sourceTree = "<group>"; };
+		A86C6A881C528CC600961A13 /* CalendarHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarHeader.h; path = View/CalendarView/CalendarHeader.h; sourceTree = "<group>"; };
+		A86C6A891C528CC600961A13 /* CalendarHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarHeader.m; path = View/CalendarView/CalendarHeader.m; sourceTree = "<group>"; };
 		A8A631321C303BF20018BCE9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A8A631331C303BF20018BCE9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A8A631341C303BF20018BCE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,6 +154,10 @@
 			children = (
 				A8A631661C3BE5A10018BCE9 /* CalendarView.h */,
 				A8A631671C3BE5A10018BCE9 /* CalendarView.m */,
+				A86C6A851C51380E00961A13 /* CalendarItem.h */,
+				A86C6A861C51380E00961A13 /* CalendarItem.m */,
+				A86C6A881C528CC600961A13 /* CalendarHeader.h */,
+				A86C6A891C528CC600961A13 /* CalendarHeader.m */,
 			);
 			name = CalendarView;
 			path = ..;
@@ -330,6 +340,8 @@
 				A8A6314B1C303BF20018BCE9 /* AppDelegate.m in Sources */,
 				A8A631511C303BF20018BCE9 /* HistoryViewController.m in Sources */,
 				A8A631681C3BE5A10018BCE9 /* CalendarView.m in Sources */,
+				A86C6A871C51380E00961A13 /* CalendarItem.m in Sources */,
+				A86C6A8A1C528CC600961A13 /* CalendarHeader.m in Sources */,
 				A8A6314F1C303BF20018BCE9 /* HabitCalendarController.m in Sources */,
 				A8A631551C303BF20018BCE9 /* ViewController.m in Sources */,
 				A8A6315D1C303C560018BCE9 /* HabitTableCell.m in Sources */,

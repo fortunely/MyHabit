@@ -7,6 +7,7 @@
 //
 
 #import "HabitCalendarController.h"
+#import "CalendarView.h"
 
 @interface HabitCalendarController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -15,6 +16,8 @@
 @property (strong, nonatomic) UIView *currentView;
 @property (strong, nonatomic) UIView *rightView;
 
+@property (strong, nonatomic) CalendarView *calendarView;
+
 @end
 
 @implementation HabitCalendarController
@@ -22,7 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"begin");
     
+    [self.scrollView addSubview:self.currentView];
+    [self.currentView addSubview:self.calendarView];
     
 }
 
@@ -31,8 +37,8 @@
     if (!_leftView) {
         CGRect frame = CGRectMake(-self.scrollView.bounds.size.width, 0, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
         _leftView = [[UIView alloc] initWithFrame:frame];
-        [self.scrollView addSubview:_leftView];
     }
+    
     return _leftView;
 }
 
@@ -41,8 +47,8 @@
     if (!_currentView) {
         CGRect frame = CGRectMake(0, 0, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
         _currentView = [[UIView alloc] initWithFrame:frame];
-        [self.scrollView addSubview:_currentView];
     }
+    
     return _currentView;
 }
 
@@ -51,9 +57,19 @@
     if (!_rightView) {
         CGRect frame = CGRectMake(0, 0, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
         _rightView = [[UIView alloc] initWithFrame:frame];
-        [self.scrollView addSubview:_currentView];
     }
+    
     return _rightView;
+}
+
+-(CalendarView *)calendarView
+{
+    if (!_calendarView) {
+        NSDate *date = [NSDate date];
+        _calendarView = [[CalendarView alloc] initWithFrame:self.currentView.frame currentDate:date];
+    }
+    
+    return _calendarView;
 }
 
 
